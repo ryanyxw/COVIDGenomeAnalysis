@@ -43,9 +43,8 @@ def isValid(currLine):
         print("entered except, pvalue is not a integer")
         return False
  
-totalCount = 100
-#while(currLine != ['']):
-for i in range(totalCount):
+
+while(currLine != ['']):
     if isValid(currLine):
         out1.write(currLine[pIndex] + "\t" + currLine[posIndex] + "\n")
     currLine = in1.readline().strip().split("\t")

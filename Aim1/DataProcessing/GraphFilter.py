@@ -59,19 +59,26 @@ for i in range(totalCount-1):
     ind = currVal.find("e")
     tempNum = 0
     if (ind != -1):
-        firstNum = currVal[:ind]
+        try:
+            firstNum = currVal[:ind]
 #        print("firstNum = " + repr(firstNum))
-        secondNum = currVal[ind+1:]
+            secondNum = currVal[ind+1:]
 #        print("secondNum = " + repr(secondNum))
 #        print("inted = " + repr(int(secondNum)))
-        tempNum = math.log(eval(firstNum), 10) + int(secondNum) * logTen
+            tempNum = math.log(eval(firstNum), 10) + int(secondNum) * logTen
+        except:
+            print("tempLine = " + repr(tempLine))
+            print("currVal = " + currVal)
+            print("firstNum = " + repr(firstNum))
+            print("secondNum = " + repr(secondNum))
+            print("inted = " + repr(int(secondNum)))
     else:
         tempNum = math.log(eval(currVal), 10)
 #    yRecordVal = -1/2.5 * tempNum
     yRecordVal = -1 * tempNum
 #    print("yRecordVal = " + repr(yRecordVal))
     
-#    if yRecordVal > 25:
+#    if yRecordVal > 10:
 #        break
     
     y += [yRecordVal]
