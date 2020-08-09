@@ -8,8 +8,8 @@ Created on Sat Aug  8 10:47:08 2020
 import subprocess
 
 
-folderName = "CoronaryArteryDisease"
-fileName= "CoronaryArteryDisease.tsv"
+folderName = "Type2Diabetes"
+fileName= "Type2Diabetes.tsv"
 pIndex = 11
 posIndex = 0
 
@@ -43,8 +43,9 @@ def isValid(currLine):
         print("entered except, pvalue is not a integer")
         return False
  
-
+#totalNum = 1000
 while(currLine != ['']):
+#for i in range(totalNum):
     if isValid(currLine):
         out1.write(currLine[pIndex] + "\t" + currLine[posIndex] + "\n")
     currLine = in1.readline().strip().split("\t")
@@ -55,7 +56,7 @@ command = "sort -g -r -o " + folderName + "/Sorted.txt " + folderName + "/Pvalue
 #command = "sort -g -r -o Obesity/Sorted.txt Obesity/PvaluePos.txt"
 out1.close()
 p = subprocess.Popen(command, shell=True)
-
+print(p)
 print("Data sorting complete")
 
 

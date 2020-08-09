@@ -10,10 +10,12 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-folderName = "CoronaryArteryDisease"
-fileName= "CoronaryArteryDisease.tsv"
+folderName = "Type2Diabetes"
+fileName= "Type2Diabetes.tsv"
 pIndex = 11
 posIndex = 0
+
+
 
 ##############################################################################################################################################################################################
 in2 = open(folderName + "/Sorted.txt", "r")
@@ -58,6 +60,7 @@ for i in range(totalCount-1):
 #    print("currVal = " + currVal)
     ind = currVal.find("e")
     tempNum = 0
+    tempBool = False
     if (ind != -1):
         try:
             firstNum = currVal[:ind]
@@ -66,20 +69,37 @@ for i in range(totalCount-1):
 #        print("secondNum = " + repr(secondNum))
 #        print("inted = " + repr(int(secondNum)))
             tempNum = math.log(eval(firstNum), 10) + int(secondNum) * logTen
+            tempBool = True
         except:
+            print("Scientific Notation")
+            print("Row number = " + repr(i))
             print("tempLine = " + repr(tempLine))
             print("currVal = " + currVal)
             print("firstNum = " + repr(firstNum))
             print("secondNum = " + repr(secondNum))
             print("inted = " + repr(int(secondNum)))
+            tempBool = False
     else:
-        tempNum = math.log(eval(currVal), 10)
+        try:
+            tempNum = math.log(eval(currVal), 10)
+            tempBool = True
+        except:
+            print("Normal Notation")
+            print("Row number = " + repr(i))
+            print("tempLine = " + repr(tempLine))
+            print("currVal = " + currVal)
+            print("firstNum = " + repr(firstNum))
+            print("secondNum = " + repr(secondNum))
+            print("inted = " + repr(int(secondNum)))
+            tempBool = False
 #    yRecordVal = -1/2.5 * tempNum
+    if (tempBool == False):
+        continue
     yRecordVal = -1 * tempNum
 #    print("yRecordVal = " + repr(yRecordVal))
     
-#    if yRecordVal > 10:
-#        break
+    if yRecordVal > 10:
+        break
     
     y += [yRecordVal]
 #    print("yRecordVal ======================== " + repr(yRecordVal))
@@ -108,7 +128,7 @@ yAxis = np.array(y)
 plt.plot(xAxis, yAxis, "o")
 
 
-plt.plot([0, 7], [0, 7])
+plt.plot([0, 4.5], [0, 4.5])
 
 
 plt.xlabel("Predicted -log(P-value)")
@@ -146,4 +166,5 @@ while(currQQLine != ['']):
 
 QQRead.close()
 SNPRead.close()
+out3.close()
 print("Process Complete with " + repr(count) + " SNPs remaining")
