@@ -8,15 +8,22 @@ Created on Sat Aug  8 10:47:08 2020
 import subprocess
 
 
-folderName = "Type2Diabetes"
-fileName= "Type2Diabetes.tsv"
-pIndex = 11
-posIndex = 0
+folderName = "HospitalizedCOVID"
+fileName= "HospitalizedCOVID.txt"
+pIndex = 32
+posIndex = 4
 
 #Tests how to extract a specific column in a file
 
 in1 = open("../Data/" + fileName, "r")
+
+'''
+currLine = in1.readline().strip().split("\t")
+print(currLine)
+print(currLine.index("SNP"))
+print(currLine.index("all_inv_var_meta_p"))
 #out1 = open("outputV2.txt", "w")
+'''
 out1 = open(folderName + "/PvaluePos.txt", "w")
 currLine = in1.readline().strip().split("\t")
 
@@ -58,6 +65,5 @@ out1.close()
 p = subprocess.Popen(command, shell=True)
 print(p)
 print("Data sorting complete")
-
 
 

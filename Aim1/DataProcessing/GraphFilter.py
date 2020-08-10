@@ -10,10 +10,10 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-folderName = "Type2Diabetes"
-fileName= "Type2Diabetes.tsv"
-pIndex = 11
-posIndex = 0
+folderName = "HospitalizedCOVID"
+fileName= "HospitalizedCOVID.txt"
+pIndex = 32
+posIndex = 4
 
 
 
@@ -25,6 +25,7 @@ tempLine = in2.readline().split("\t")
 
 logTen = math.log(10, 10)
 
+#(1, 3), (5, 7)
 y = []
 x = []
 
@@ -98,8 +99,8 @@ for i in range(totalCount-1):
     yRecordVal = -1 * tempNum
 #    print("yRecordVal = " + repr(yRecordVal))
     
-    if yRecordVal > 10:
-        break
+#    if yRecordVal > 4.5:
+#        break
     
     y += [yRecordVal]
 #    print("yRecordVal ======================== " + repr(yRecordVal))
@@ -128,7 +129,7 @@ yAxis = np.array(y)
 plt.plot(xAxis, yAxis, "o")
 
 
-plt.plot([0, 4.5], [0, 4.5])
+plt.plot([0, 7], [0, 7])
 
 
 plt.xlabel("Predicted -log(P-value)")
