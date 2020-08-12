@@ -10,8 +10,8 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-folderName = "HospitalizedCOVID"
-fileName= "HospitalizedCOVID.txt"
+folderName = "SevereCOVID"
+fileName= "SevereCOVID.txt"
 pIndex = 32
 posIndex = 4
 
@@ -99,8 +99,8 @@ for i in range(totalCount-1):
     yRecordVal = -1 * tempNum
 #    print("yRecordVal = " + repr(yRecordVal))
     
-#    if yRecordVal > 4.5:
-#        break
+    if yRecordVal > 4.5:
+        break
     
     y += [yRecordVal]
 #    print("yRecordVal ======================== " + repr(yRecordVal))
@@ -129,7 +129,7 @@ yAxis = np.array(y)
 plt.plot(xAxis, yAxis, "o")
 
 
-plt.plot([0, 7], [0, 7])
+plt.plot([0, 5], [0, 5])
 
 
 plt.xlabel("Predicted -log(P-value)")
