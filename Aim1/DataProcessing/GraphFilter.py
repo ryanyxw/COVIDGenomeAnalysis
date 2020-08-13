@@ -13,6 +13,7 @@ import numpy as np
 folderName = "NewSevere"
 fileName= "Severe.txt"
 pIndex = 17
+
 posIndex = 4
 
 

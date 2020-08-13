@@ -1,2 +1,5 @@
 .DS_Store
 Aim1/Data/**
+Aim1/DataPreprocessing/Obesity/Sorted.txt
+**/Sorted.txt
+**/GraphValue.txt
