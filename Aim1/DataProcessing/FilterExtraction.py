@@ -8,8 +8,8 @@ Created on Sat Aug  8 10:47:08 2020
 import subprocess
 
 
-folderName = "HospitalizedCOVID"
-fileName= "HospitalizedCOVID.txt"
+folderName = "NewHospitalized"
+fileName= "Hospitalized.txt"
 pIndex = 32
 posIndex = 4
 
@@ -58,10 +58,10 @@ while(currLine != ['']):
     currLine = in1.readline().strip().split("\t")
 
 print("Data extraction and preliminary processing complete")
-
+out1.close()
 command = "sort -g -r -o " + folderName + "/Sorted.txt " + folderName + "/PvaluePos.txt"
 #command = "sort -g -r -o Obesity/Sorted.txt Obesity/PvaluePos.txt"
-out1.close()
+
 p = subprocess.Popen(command, shell=True)
 print(p)
 print("Data sorting complete")

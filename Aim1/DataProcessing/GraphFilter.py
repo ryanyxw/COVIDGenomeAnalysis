@@ -10,10 +10,9 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-folderName = "NewSevere"
-fileName= "Severe.txt"
-pIndex = 17
-
+folderName = "NewHospitalized"
+fileName= "Hospitalized.txt"
+pIndex = 32
 posIndex = 4
 
 
