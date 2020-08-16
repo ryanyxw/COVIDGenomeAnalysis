@@ -5,16 +5,25 @@ Created on Sun Aug 16 15:46:37 2020
 
 @author: ryanwang
 """
+import os
 
-currentFile = "hu8A5FBF" + ".txt"
+folderName = "TXT"
+totalFile = os.listdir("./Data/" + folderName)
+
+#totalFile = ["hu8A5FBF", "hu781EE2", "huE24522", "huFD847C"]
 
 def run():
-    out1 = open("GenotypeMatrix.txt", "w")
-    addIndividual(currentFile, out1)
+    out1 = open(folderName + "GenotypeMatrix.txt", "w")
+    count = 1
     
+    for personID in totalFile:
+        currentFile = folderName + "/" + personID
+        addIndividual(currentFile, out1, count)
+        count += 1
     out1.close()
 
-def addIndividual(currentFile, out1):
+def addIndividual(currentFile, out1, count):
+    print(currentFile)
     in1 = open("Data/" + currentFile, "r")
     hapFile = open("CombinedHap.txt")
     tempLine = in1.readline().strip().split("\t")
@@ -25,8 +34,8 @@ def addIndividual(currentFile, out1):
 #        print(tempLine)
         tempLine = in1.readline().strip().split("\t")
 #        tempLine = repr(in1.readline())
-    tempLine = in1.readline().strip().split("\t")
-    print(tempLine)
+    #tempLine = in1.readline().strip().split("\t")
+    print(repr(count))
     hapChrom = int(tempHap[0])
     hapPosStart = int(tempHap[1])
     hapPosEnd = int(tempHap[2])
@@ -48,6 +57,8 @@ def addIndividual(currentFile, out1):
             hapIndex += 1
             hapArr += ["0"]
         else:
+            if tempLine[1] == "X" or tempLine[1] == "Y":
+                break
             currChrom = int(tempLine[1])
             currPos = int(tempLine[2])
         if currChrom < hapChrom:
@@ -67,6 +78,7 @@ def addIndividual(currentFile, out1):
             else:
                 tempHap = hapFile.readline().strip().split("\t")
                 isHap = True
+    print("final = " + repr(tempLine))
     returnStr = "\t".join(hapArr)
-    out1.write(returnStr + "\n")
+    out1.write(returnStr + "\n\n")
 run()
