@@ -12,6 +12,7 @@ from queue import Queue
 import course
 import requests
 import time
+import csv
 import types
 import re
 import urllib.request
@@ -28,19 +29,27 @@ def get_report(URL,key):
     time.sleep(1)
     
     Select(browser.find_element_by_xpath("//*[@id='participants_length']/label/select")).select_by_value('100')
-
+    
+    button = browser.find_element_by_xpath("//*[@id='participants']/thead/tr/th[7]/div/span")
+    button.click()
     time.sleep(1)
     diction = {}
     for word in key:
- 
-        
         text = browser.find_element_by_xpath("//*[@id='participants_filter']/label/input")
         text.send_keys(word)
         time.sleep(2)
 
-        for i in range(1,50):
+        for i in range(1,60):
+            try:
+                key = browser.find_element_by_xpath("//*[@id='participants']/tbody/tr[{}]/td[7]".format(i))
+            except:
+                continue
             filt = browser.find_element_by_xpath("//*[@id='participants']/tbody/tr[{}]/td[{}]".format(i,1))
-            if "PGP" not in filt.text:
+            # if "PGP" not in filt.text:
+            #     continue
+            string = key.text
+
+            if not string.isdigit():
                 continue
             j = 2
             try:
@@ -68,7 +77,8 @@ def get_download(URL):
     for info in lists:
         key = info.get_attribute('href')
         if 'genome' in key:
-            temp.append(info.get_attribute('href'))
+            if 'microbio' not in key.lower():
+                temp.append(info.get_attribute('href'))
     browser.close()
     return temp
     # table = browser.find_element_by_tag_name('table')
@@ -82,15 +92,31 @@ def get_download(URL):
     # print(diction)
 #get_download("https://my.pgp-hms.org/profile_public?hex=hu9385BA")
 
+
+
 diction = get_report('https://my.pgp-hms.org/users',key)
+
+
 new_dict = {}
+i = 0
 for url in diction:
-    temp = get_download(url)
-    new_dict[diction[url]] = temp
-print(new_dict)
+      temp = get_download(url)
+      print(i)
+      i+=1
+      new_dict[diction[url]] = temp
+print(len(new_dict))
+
+
+
+with open('../../Downloads/new_data3.csv', 'a') as file:
+    writer = csv.writer(file)
+    writer.writerow([])
     
-
-
-
+    for name in new_dict:
+        temp = []
+        temp.append(name)
+        for info in new_dict[name]:
+            temp.append(info)
+        writer.writerow(temp)
 
 
