@@ -1,0 +1,22 @@
+,current,past(last one month)
+Current[Cough],0.045601344,0.032984196
+"Current[Feelingcold,chillsorshivers]",0.041197173,0.057365599
+Current[Nausea],0.033623219,0.017900663
+Current[Runningnose],0.033456226,0.025732807
+Current[Achesalloverthebody],0.031034684,0.05261301
+Current[Sorethroat],0.026485596,0.043012527
+Current[Shortnessofbreath],0.02417794,0.021349214
+Current[Wheezingorchesttightness],0.018420299,0.030233552
+Current[Dizziness],0.016428229,0.027043069
+Current[Diarrhea],0.014947429,0.027063729
+Current[Headache],0.013405186,0.036658157
+"Current[Persistenthighfeverof38C(100.4F)orhigher,lastingforadayormore]",0.012883931,0.024685184
+Current[AbdominalPain],0.012776063,0.020242837
+Current[Persistentpainorpressureinthechest],0.007423911,0.015285558
+Current[Lossofsenseoftaste],0.007103248,0.004178109
+Current[Lossofsenseofsmell],0.004179718,0.003723227
+Current[Vomiting],0.003036132,0.003583913
+Current[Rapidbreathing],0.001853324,0.004765092
+Current[Pinkeye(conjunctivitis)],0.001203764,0.007169762
+Current[Confusionorinabilitytoarouse],0.000942678,0.001500197
+Current[Bluishlipsorface],0.000262705,0.000600545
