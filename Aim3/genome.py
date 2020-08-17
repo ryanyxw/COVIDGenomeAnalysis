@@ -8,13 +8,13 @@ Created on Sun Aug 16 11:25:22 2020
 
 from selenium.webdriver.support.select import Select
 from selenium import webdriver
-from queue import Queue
-import course
-import requests
+#from queue import Queue
+#import course
+#import requests
 import time
-import types
-import re
-import urllib.request
+#import types
+#import re
+#import urllib.request
 key = ["hua","hub","huc","huf","hue","huf","hu1","hu2","hu3","hu4","hu5","hu6","hu7","hu8","hu9"]
 
 
@@ -32,8 +32,6 @@ def get_report(URL,key):
     time.sleep(1)
     diction = {}
     for word in key:
- 
-        
         text = browser.find_element_by_xpath("//*[@id='participants_filter']/label/input")
         text.send_keys(word)
         time.sleep(2)
