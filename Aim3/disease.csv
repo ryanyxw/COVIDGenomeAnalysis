@@ -1,0 +1,239 @@
+Urinary tract infection (UTI),0.0058554
+Iron deficiency anemia,0.005150663
+Restless legs syndrome,0.004761343
+Dental cavities,0.004417745
+Hypothyroidism,0.004249538
+Colon polyps,0.004108743
+Myopia (Nearsightedness),0.004017489
+High cholesterol (hypercholesterolemia),0.004010299
+Plantar fasciitis,0.003453939
+Hemorrhoids,0.003234659
+Scoliosis,0.00308288
+Asthma,0.002925705
+Tinnitus,0.002882093
+Acne,0.002666483
+Osgood-Schlatter disease,0.002634479
+Hypertension,0.002516163
+Lactose intolerance,0.002483882
+Astigmatism,0.002325251
+Deviated septum,0.002124726
+Kidney stones,0.001979844
+TestedContact,0.001961145
+Migraine with aura,0.001958461
+Dandruff,0.001938129
+Flatfeet,0.001850558
+Frozen shoulder,0.001835718
+Eczema,0.001796143
+Chronic tonsillitis,0.001729046
+Allergic rhinitis,0.001726434
+Tongue tie (ankyloglossia),0.001704407
+Allergic contact dermatitis,0.001694415
+Hair loss (includes female and male pattern baldness),0.001676399
+Essential tremor,0.001527535
+Lipoma,0.001377036
+High triglycerides (hypertriglyceridemia),0.001337764
+Benign prostatic hypertrophy (BPH),0.001297302
+Migraine without aura,0.001266709
+Skin tags,0.001242632
+Osteoarthritis,0.001211071
+Mitral valve prolapse,0.001185179
+Atrial fibrillation,0.001178982
+Gilbert syndrome,0.001173437
+Non-melanoma skin cancer,0.001138286
+Renal agenesis (missing kidney),0.001109828
+Premature ventricular contractions,0.001090971
+Other peripheral neuropathy,0.001084653
+Non-Hodgkin lymphoma,0.001050461
+Dry eye syndrome,0.001045035
+Carpal tunnel syndrome,0.000972267
+Tennis elbow,0.000930146
+Cardiac arrhythmia,0.000878589
+Hyperopia (Farsightedness),0.000864491
+Fibromyalgia,0.000842936
+Endometriosis,0.000831739
+Chondromalacia patella (CMP),0.000824393
+Breast cancer,0.000807961
+Rheumatoid arthritis,0.000803539
+Raynaud's phenomenon,0.000789435
+Ovarian cysts,0.00078736
+Thyroid nodule(s),0.000768273
+Chronic bronchitis,0.000754965
+Dupuytren's contracture,0.000745323
+Irritable bowel syndrome (IBS),0.000740479
+Chronic sinusitis,0.000722263
+Barrett's esophagus,0.00069437
+Pilonidal cyst,0.000642738
+Canker sores (oral ulcers),0.000630815
+Crohn's disease,0.000618987
+Hereditary thrombophilia (includes Factor V Leiden and Prothrombin G20210A),0.000610355
+Epilepsy,0.00056565
+Sciatica,0.000545479
+Uterine fibroids,0.000541145
+Varicocele,0.000524822
+Hypospadias,0.000493067
+Hashimoto's thyroiditis,0.000473868
+Ehlers-Danlos syndrome,0.000434001
+Congenital heart defect,0.000387972
+Breast fibroadenoma,0.000335823
+Nasal polyps,0.000321721
+Bell's palsy,0.000315478
+Bunions,0.000314355
+Keloids,0.000300583
+Strabismus,0.000291864
+Fibrocystic breast disease,0.000281435
+Spina bifida,0.000266594
+Brain cancer,0.000263689
+G6PD deficiency,0.00026146
+Floaters,0.000254353
+Bundle branch block,0.000246216
+Deep vein thrombosis (DVT),0.000244615
+Female infertility,0.000231802
+Endometrial cancer,0.000228598
+Osteoporosis,0.000220559
+Melanoma,0.000220304
+Lichen planus,0.000182236
+Appendicitis,0.000170865
+Bone spurs,0.000170664
+Diverticulosis,0.000163539
+Rotator cuff tear,0.000163446
+Spinal stenosis,0.000150285
+Prostate cancer,0.000143835
+Temporomandibular joint (TMJ) disorder,0.000129265
+Congenital clubfoot (equinovarus),8.05E-05
+Spermatocele,3.00E-05
+Cluster headaches,2.33E-05
+Trigger finger,1.10E-05
+Developmental dysplasia of the hip,9.98E-06
+Cleft uvula,7.10E-06
+Age-related hearing loss,4.94E-06
+Long QT Syndrome,3.96E-06
+Presbyopia,2.46E-06
+Parkinson's disease,1.16E-06
+Sensorineural hearing loss or congenital deafness,9.57E-07
+Male infertility,9.50E-07
+Age-related cataract,7.64E-07
+Multiple sclerosis (MS),3.97E-07
+Dermatographia,3.69E-07
+Cafe au lait spots,2.82E-07
+Ulcerative colitis,1.79E-07
+Gingivitis,1.25E-07
+Hemochromatosis,1.11E-07
+Varicose veins,4.36E-08
+Impacted tooth,4.27E-09
+Bartholin's cyst,3.95E-09
+Narcolepsy,2.12E-09
+Restrictive cardiomyopathy,0
+Spinal muscular atrophy,0
+Chronic kidney failure,0
+Cerebral palsy,0
+Primary hyperparathyroidism,0
+Kawasaki disease,0
+Retinitis pigmentosa,0
+Congenital ichthyosis,0
+Amyotrophic lateral sclerosis (ALS),0
+Cleft palate,0
+Other aneurysm,0
+Sickle cell trait (carrier),0
+Hidradenitis suppurativa,0
+Hemophilia,0
+Folate deficiency anemia,0
+Congenital hydronephrosis,0
+Chronic liver disease and cirrhosis,0
+Diabetic retinopathy,0
+Polycystic kidney disease,0
+Dilated cardiomyopathy,0
+Hypertensive retinopathy,0
+Congenital nystagmus,0
+Hereditary hemorrhagic telangiectasia (also known as Osler-Weber-Rendu syndrome),0
+Infantile pyloric stenosis,0
+Graves' disease,0
+Central serous retinopathy,0
+Muscular dystrophy,0
+Huntington's disease,0
+Syndactyly (webbing of digits),0
+Pernicious anemia (a.k.a. Addison-Biermer anemia),0
+Arnold-Chiari malformation,0
+Keratoconus,0
+and presenile cataract,0
+juvenile,0
+Infantile,0
+Celiac disease,0
+Sick sinus syndrome (includes tachy-brady syndrome),0
+Recurrent sleep paralysis,0
+Single transverse palmar crease (simian crease),0
+Neurofibromatosis,0
+Essential thrombocythemia,0
+Polycythemia vera,0
+Leukemia,0
+Ovarian cancer,0
+Lung cancer,0
+Pancreatic cancer,0
+Rectal cancer,0
+Colon cancer,0
+Stomach cancer,0
+Meniere's disease,0
+Sjogren's syndrome (Sicca syndrome),0
+Marfan syndrome,0
+Urethral diverticulum,0
+Acute kidney failure,0
+Otosclerosis,0
+Kidney cancer,0
+Other thrombophilia (includes antiphospholipid syndrome),0
+Lupus,0
+Von Willebrand disease,0
+Growth hormone deficiency,0
+Aortic aneurysm,0
+Idiopathic thrombocytopenic purpura (ITP),0
+Fissured tongue,0
+Bladder cancer,0
+Heart block,0
+Stroke,0
+Congestive heart failure,0
+Pulmonary embolism,0
+Myocardial infarction (heart attack),0
+Chronic Obstructive Pulmonary Disease (COPD),0
+Emphysema,0
+Thyroid cancer,0
+Porphyria,0
+Alpha 1-antitrypsin deficiency,0
+Traumatic cataract,0
+Glaucoma,0
+Cervical cancer,0
+Autoimmune hemolytic anemia,0
+Polydactyly,0
+Trigeminal neuralgia,0
+type 1,0
+Wolff-Parkinson-White (WPW) Syndrome,0
+Other cardiomyopathy (including ARVD),0
+Uterine prolapse,0
+Angina,0
+Postural kyphosis,0
+Gout,0
+Color blindness,0
+Retinal detachment,0
+Acute liver failure,0
+Hiatal hernia,0
+Hyperhidrosis (excessive sweating),0
+Scheuermann's kyphosis,0
+at least 6 months),0
+Chronic tension headaches (15+ days per month,0
+Peptic ulcer (stomach or duodenum),0
+Hypertrophic cardiomyopathy,0
+Gallstones,0
+Nonalcoholic fatty liver disease (NAFLD),0
+Age-related macular degeneration,0
+Alopecia areata,0
+Rosacea,0
+Diverticulitis Urinary Tract,0
+Psoriasis,0
+Achilles tendonitis,0
+type 2,0
+Diabetes mellitus,0
+Non-Celiac Gluten Sensitivity,0
+Peyronie's disease,0
+Geographic tongue,0
+Polycystic ovary syndrome (PCOS),0
+Hereditary motor and sensory neuropathy (includes Charcot-Marie-Tooth disease and HNPP),0
+Rectal prolapse,0
+Gastroesophageal reflux disease (GERD),0
+Inguinal hernia,0
